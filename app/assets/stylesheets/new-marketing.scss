@@ -1,0 +1,522 @@
+// // New marketing site styles not yet in Primer
+// $font-mktg: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+// $h000-size: 64px;
+// $h000-size-mobile: 48px;
+// // $blue-450: mix($blue-500, $blue-400, 50%);
+// // $green-450: mix($green-500, $green-400, 50%);
+// // $gray-450: mix($gray-500, $gray-400, 50%);
+// // $box-shadow-large-mktg: 0 4px 14px rgba(0, 0, 0, 0.1);
+// // $transition-time: 0.4s;
+
+// // Colors - colors without the -mktg suffix are new and not based on exisitng primer classes
+
+// .bg-blue-dark {
+//   background-color: $blue-800 !important;
+// }
+
+// .text-blue-mktg {
+//   color: $blue-450 !important;
+// }
+
+// .text-blue-light {
+//   color: $blue-300 !important;
+// }
+
+// .text-white-fade {
+//   color: $white-fade-70 !important;
+// }
+
+// .bg-orange {
+//   background: $orange-400 !important;
+// }
+
+// // Headings
+
+// .h000-mktg,
+// .h00-mktg,
+// .h0-mktg,
+// .h1-mktg,
+// .h2-mktg,
+// .h3-mktg,
+// .h4-mktg,
+// .h5-mktg,
+// .h6-mktg,
+// .lead-mktg {
+//   font-family: $font-mktg;
+//   font-weight: $font-weight-semibold;
+// }
+
+// .lead-mktg {
+//   font-size: 21px !important;
+//   font-weight: normal !important;
+
+//   // @include breakpoint(md) { font-size: $h2-size !important; }
+// }
+
+// .h000-mktg,
+// .h000 {
+//   font-size: $h000-size-mobile !important;
+
+//   @include breakpoint(md) { font-size: $h000-size !important; }
+// }
+
+// .h00-mktg {
+//   font-size: $h00-size-mobile !important;
+
+//   @include breakpoint(md) { font-size: $h00-size !important; }
+// }
+
+// .h0-mktg {
+//   font-size: $h0-size-mobile !important;
+
+//   @include breakpoint(md) { font-size: $h0-size !important; }
+// }
+
+// .h1-mktg {
+//   font-size: $h1-size-mobile !important;
+
+//   @include breakpoint(md) { font-size: $h1-size !important; }
+// }
+
+// .h2-mktg {
+//   font-size: $h2-size-mobile !important;
+
+//   @include breakpoint(md) { font-size: $h2-size !important; }
+// }
+
+// .h3-mktg {
+//   font-size: $h3-size-mobile !important;
+
+//   @include breakpoint(md) { font-size: $h3-size !important; }
+// }
+
+// .h4-mktg {
+//   font-size: $h4-size !important;
+// }
+
+// .h5-mktg {
+//   font-size: $h5-size !important;
+// }
+
+// .h6-mktg {
+//   font-size: $h6-size !important;
+// }
+
+// // Text stylings
+
+// .text-gray-light-ultra {
+//   font-style: normal;
+//   font-weight: $font-weight-normal;
+//   color: $gray-450;
+// }
+
+// .underline-dashed {
+//   display: inline;
+//   padding-bottom: $spacer-1;
+//   background-image: linear-gradient(to right, $gray-300 50%, rgba(255, 255, 255, 0) 0%);
+//   background-repeat: repeat-x;
+//   background-position: bottom;
+//   background-size: 10px 2px;
+// }
+
+// .link-mktg {
+//   color: $blue-450;
+//   text-decoration: none !important;
+//   box-shadow: 0 1px 0 0 rgba($blue-450, 0.5);
+//   transition: $transition-time / 2;
+
+//   &:hover {
+//     color: $blue-500;
+//     box-shadow: 0 1px 0 0 rgba($blue-450, 1);
+//   }
+// }
+
+// //  Components
+
+// .Tile {
+//   position: relative;
+//   display: block;
+//   min-height: 250px;
+//   background-color: $gray-100;
+//   border-radius: $border-radius;
+//   transition: $transition-time;
+
+//   &:hover {
+//     background-color: $white;
+//     box-shadow: $box-shadow-large-mktg;
+//   }
+
+//   &:active {
+//     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+//   }
+// }
+
+// // Reveals dot grid on hover behind the tile
+
+// .Tile--dots {
+//   &::before {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     width: 180px;
+//     height: 180px;
+//     content: "";
+//     background: url("/images/modules/site/patterns/dots-small.svg");
+//     opacity: 0;
+//     transition: $transition-time;
+//   }
+
+//   &::after {
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//     z-index: -1;
+//     width: 180px;
+//     height: 180px;
+//     content: "";
+//     background: url("/images/modules/site/patterns/dots-small.svg");
+//     opacity: 0;
+//     transition: $transition-time;
+//   }
+
+//   &:hover {
+//     &::before {
+//       opacity: 1;
+//       transform: translate3d(-18px, -18px, 0);
+//     }
+
+//     &::after {
+//       opacity: 1;
+//       transform: translate3d(23px, 23px, 0);
+//     }
+//   }
+
+//   &:active {
+//     &::before {
+//       opacity: 0.5;
+//       transform: translate3d(-10px, -10px, 0);
+//     }
+
+//     &::after {
+//       opacity: 0.5;
+//       transform: translate3d(18px, 18px, 0);
+//     }
+//   }
+// }
+
+// // Reveals diagonal arrow on hover
+
+// .Tile--symbol {
+//   &::before {
+//     position: absolute;
+//     top: $spacer-3;
+//     right: $spacer-4;
+//     font-size: $h2-size;
+//     content: "→";
+//     opacity: 0;
+//     transition: $transition-time, color 0s;
+//     transform: rotate(-45deg) translateX(-$spacer-1 + 1);
+//   }
+
+//   &:hover {
+//     &::before {
+//       opacity: 1;
+//       transform: rotate(-45deg) translateX(0);
+//     }
+//   }
+
+//   &:active {
+//     &::before {
+//       opacity: 1;
+//       transition: $transition-time / 2;
+//       transform: rotate(-45deg) translateX(-$spacer-1 - 1);
+//     }
+//   }
+// }
+
+// .Tile-date {
+//   position: absolute;
+//   bottom: $spacer-4;
+//   left: $spacer-4;
+//   margin-bottom: 0;
+//   line-height: $lh-condensed-ultra;
+//   color: $gray-400;
+// }
+
+// // Places a 4 dot wide border along the top and left
+
+// .bg-dots-gray {
+//   background: url("/images/modules/site/patterns/dots-small.svg");
+// }
+
+// .bg-dots-gray-large {
+//   background: url("/images/modules/site/patterns/dots-large.svg");
+// }
+
+// .dots-4 {
+//   position: relative;
+
+//   &::before {
+//     position: absolute;
+//     top: -$spacer-5 + 1;
+//     left: -$spacer-5 + 1;
+//     z-index: -1;
+//     width: 75%;
+//     height: 75%;
+//     content: "";
+//     background: url("/images/modules/site/patterns/dots-small.svg");
+//   }
+// }
+
+// // Places a 3 dot wide border along the top and left
+
+// .dots-3 {
+//   position: relative;
+
+//   &::before {
+//     position: absolute;
+//     top: -$spacer-4 + 3;
+//     left: -$spacer-4 + 3;
+//     z-index: -1;
+//     width: 75%;
+//     height: 75%;
+//     content: "";
+//     background: url("/images/modules/site/patterns/dots-small.svg");
+//   }
+// }
+
+// // Adds a gray and dotted plane (small dots) as pseudo elements to container in hero behind illustrations
+
+// .bg-hero-dots-gray {
+//   position: relative;
+
+//   &::before {
+//     position: absolute;
+//     top: -$spacer-7;
+//     left: -$spacer-7;
+//     z-index: -1;
+//     width: 100%;
+//     height: 100%;
+//     content: "";
+//     background-color: $gray-000;
+//   }
+
+//   &::after {
+//     position: absolute;
+//     bottom: -$spacer-3;
+//     z-index: -2;
+//     width: 100%;
+//     height: 100%;
+//     content: "";
+//     // TODO update url when ready to deploy
+//     background: url("/assets/images/dots-small.svg");
+//   }
+
+//   // modifier class moves gray bg element to be wider on the left on wider vw
+//   &.bg-hero-dots-gray-left {
+//     @include breakpoint(xl) {
+//       &::before {
+//         left: -$spacer-11 * 2;
+//         width: $spacer-11 * 6;
+//         height: 107%;
+//       }
+
+//       &::after {
+//         bottom: -$spacer-10;
+//       }
+//     }
+//   }
+
+//   // modifier class moves gray bg element to be wider on the right on wider vw
+//   &.bg-hero-dots-gray-right {
+//     &::before {
+//       top: -$spacer-6;
+//       right: -$spacer-10;
+//       left: auto;
+//       height: 107%;
+
+//       @include breakpoint(lg) {
+//         right: -$spacer-11 * 2;
+//         width: $spacer-11 * 6;
+//       }
+//     }
+
+//     &::after {
+//       bottom: -$spacer-8;
+
+//       @include breakpoint(xl) {
+//         bottom: -$spacer-10;
+//       }
+//     }
+//   }
+// }
+
+// .bg-dots-big {
+//   position: absolute;
+//   z-index: -1;
+//   width: 100%;
+//   height: 100%;
+//   content: "";
+//   background: url("/assets/images/dots-large.svg");
+// }
+
+// .Point {
+//   &:hover {
+//     .Point-symbol {
+//       transform: translateY(-$spacer-1 - 1);
+//     }
+//   }
+// }
+
+// .Point-symbol {
+//   transition: $transition-time / 2;
+//   transform: translateY(0);
+// }
+
+// // Arrow links
+
+// .Bump-link-symbol {
+//   display: inline-block;
+//   transition: $transition-time / 2;
+//   transform: translateX(0);
+// }
+
+// .Bump-link:hover .Bump-link-symbol {
+//   transform: translateX(3px);
+// }
+
+// .Bump-link--hover .Bump-link-symbol {
+//   color: inherit;
+//   opacity: 0;
+//   transition: $transition-time / 2;
+//   transform: translateX(0);
+// }
+
+// .Bump-link--hover:hover .Bump-link-symbol {
+//   opacity: 1;
+//   transform: translateX(3px);
+// }
+
+// // Buttons
+
+// .btn-mktg {
+//   display: inline-block;
+//   padding: $spacer-3 $spacer-4;
+//   font-size: $h5-size;
+//   font-weight: $font-weight-semibold;
+//   color: $white;
+//   white-space: nowrap;
+//   vertical-align: middle;
+//   cursor: pointer;
+//   user-select: none;
+//   background-color: $blue-450;
+//   border: 0;
+//   border-radius: $border-radius;
+//   transition: $transition-time / 2;
+//   appearance: none; // Corrects inability to style clickable `input` types in iOS.
+//   &:hover {
+//     text-decoration: none;
+//     background-color: $blue-500;
+//   }
+// }
+
+// .btn-primary-mktg {
+//   background-color: $green-450 !important;
+
+//   &:hover {
+//     background-color: $green-500 !important;
+//   }
+// }
+
+// .btn-large-mktg {
+//   padding: 20px $spacer-5;
+//   font-size: $h4-size;
+// }
+
+// .btn-outline-mktg {
+//   color: $blue-450 !important;
+//   background-color: rgba($white, 0) !important;
+//   box-shadow: 0 0 0 1px rgba($blue-450, 0.5) inset;
+
+//   &:hover {
+//     color: $blue-500 !important;
+//     text-decoration: none;
+//     box-shadow: 0 0 0 1px rgba($blue-450, 1) inset;
+//   }
+// }
+
+// // Absolutely position content
+// // primarily used on images and decorative shapes
+// $allSpacers: 0, $spacer-1, $spacer-2, $spacer-3, $spacer-4, $spacer-5, $spacer-6, $spacer-7, $spacer-8, $spacer-9, $spacer-10, $spacer-11, $spacer-12;
+// $mktgSpacers: $spacer-7, $spacer-8, $spacer-9, $spacer-10, $spacer-11, $spacer-12;
+
+// @for $i from 1 through length($allSpacers) {
+//   $size: #{nth($allSpacers, $i)};
+//   $scale: #{$i - 1};
+//   .top-#{$scale} { top: #{$size} !important; }
+//   .right-#{$scale} { right: #{$size} !important; }
+//   .bottom-#{$scale} { bottom: #{$size} !important; }
+//   .left-#{$scale} { left: #{$size} !important; }
+//   .top-n#{$scale} { top: -#{$size} !important; }
+//   .right-n#{$scale} { right: -#{$size} !important; }
+//   .bottom-n#{$scale} { bottom: -#{$size} !important; }
+//   .left-n#{$scale} { left: -#{$size} !important; }
+// }
+
+// // Responsive absolute position values
+// @each $breakpoint in map-keys($breakpoints) {
+//   // Loop through the spacer values
+//   @for $i from 1 through length($allSpacers) {
+//     @include breakpoint($breakpoint) {
+//       $size: #{nth($allSpacers, $i)}; // sm, md, lg, xl
+//       $scale: #{$i - 1};
+//       .top-#{$breakpoint}-#{$scale} { top: #{$size} !important; }
+//       .right-#{$breakpoint}-#{$scale} { right: #{$size} !important; }
+//       .bottom-#{$breakpoint}-#{$scale} { bottom: #{$size} !important; }
+//       .left-#{$breakpoint}-#{$scale} { left: #{$size} !important; }
+//       .top-#{$breakpoint}-n#{$scale} { top: -#{$size} !important; }
+//       .right-#{$breakpoint}-n#{$scale} { right: -#{$size} !important; }
+//       .bottom-#{$breakpoint}-n#{$scale} { bottom: -#{$size} !important; }
+//       .left-#{$breakpoint}-n#{$scale} { left: -#{$size} !important; }
+//     }
+//   }
+// }
+
+// // Expanded padding for all spacer sizes
+// @for $i from 1 through length($allSpacers) {
+//   $size: #{nth($allSpacers, $i)};
+//   $scale: #{$i - 1};
+//   .p-#{$scale} { padding: #{$size} !important; }
+//   .pr-#{$scale} { padding-right: #{$size} !important; }
+//   .pl-#{$scale} { padding-left: #{$size} !important; }
+// }
+
+// // Responsive padding x values
+// @each $breakpoint in map-keys($breakpoints) {
+//   // Loop through the spacer values
+//   @for $i from 1 through length($allSpacers) {
+//     @include breakpoint($breakpoint) {
+//       $size: #{nth($allSpacers, $i)}; // sm, md, lg, xl
+//       $scale: #{$i - 1};
+//       .p-#{$breakpoint}-#{$scale} { padding: #{$size} !important; }
+//       .pr-#{$breakpoint}-#{$scale} { padding-right: #{$size} !important; }
+//       .pl-#{$breakpoint}-#{$scale} { padding-left: #{$size} !important; }
+//     }
+//   }
+// }
+
+// // z-index for absolute positioned items
+// .z-n1 { z-index: -1; }
+// .z-n2 { z-index: -2; }
+
+// // Overflow for elements that off of the edges
+// .overflow-x-hidden {
+//   overflow-x: hidden;
+// }
+
+// .text-truncate {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
